@@ -390,20 +390,9 @@ export function useTableData() {
         })
 
         const match = unitKdl === kdl && doseValid
-        if (match) {
-          console.log('✅ Match:', {
-            id: unit.id,
-            nama_perum: unit.nama_perum,
-            dose: unit.dose
-          })
-        }
-
         return match
       })
-
-      console.log(`✅ Filtered ${filteredUnits.value.length} units for kdl = ${kdl}`)
-      console.log('Units detail:', JSON.stringify(filteredUnits.value, null, 2))
-
+      console.log('filteredUnit', filteredUnits.value)
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Gagal memuat data detail'
       error.value = message
@@ -427,6 +416,7 @@ export function useTableData() {
     getMonthDiff,
     classifyByAkadPeriod, // Export untuk debugging
     // fetchFilteredUnits,
-    fetchUnitsByKdl
+    fetchUnitsByKdl,
+    filteredUnits
   }
 }

@@ -30,6 +30,7 @@
     "dropzone-vue": "^0.1.11",
     "floating-vue": "^5.2.2",
     "leaflet": "^1.9.4",
+    "moment": "^2.30.1",
     "nuxt": "^3.15.3",
     "pinia": "^2.3.1",
     "sweetalert2": "^11.10.7",
