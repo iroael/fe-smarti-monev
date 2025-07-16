@@ -1,90 +1,80 @@
-interface sidebar {
-    title: string
+interface Sidebar {
+    title: string;
     menu: {
-        title: string,
-        bagde?: string
-        bagdeColor?: string
-        isPinned: boolean,
-        bookmark?: boolean
-        icon: string,
-        type: string,
-        path?: string
+        title: string;
+        badge?: string;
+        badgeColor?: string;
+        isPinned: boolean;
+        bookmark?: boolean;
+        icon: string;
+        type: string;
+        path?: string;
         children?: {
-            title: string,
-            path?: string,
-            type: string,
+            title: string;
+            path?: string;
+            type: string;
             children?: {
-                title: string,
-                path: string,
-                type: string
-            }[]
-        }[]
-    }[]
+                title: string;
+                path: string;
+                type: string;
+            }[];
+        }[];
+    }[];
 }
-export const sidebar: sidebar[] = [
+
+export const sidebar: Sidebar[] = [
     {
-        title: '- General',
+        title: 'General',
         menu: [
             {
-                bagde: '3',
-                bagdeColor: 'primary',
-                title: 'Dashboard',
+                title: 'Beranda',
                 isPinned: false,
                 icon: 'home',
-                type: 'sub',
-                children: [
-                    {
-                        title: 'Default',
-                        path: '/dashboard/default',
-                        type: 'link'
-                    },
-                    {
-                        title: 'Ecommerce',
-                        path: '/dashboard/ecommerce',
-                        type: 'link'
-                    },
-                    {
-                        title: 'project',
-                        path: '/dashboard/project',
-                        type: 'link'
-                    }
-                ]
+                type: 'link',
+                path: '/monev',
             },
-        ]
-    },
-    {
-        title: 'Pemasangan',
-        menu: [
             {
-                title: 'Pemasangan',
+                title: 'Kementrian PKP',
                 isPinned: false,
                 icon: 'home',
-                type: 'sub',
-                children: [
-                    {
-                        title: 'List Pemasangan',
-                        path: '/pemasangan/list',
-                        type: 'link'
-                    },
-                    {
-                        title: 'Tambah Pemasangan',
-                        path: '/pemasangan/tambah',
-                        type: 'link'
-                    },
-                    {
-                        title: 'Pemasangan Status',
-                        path: '/pemasangan/status',
-                        type: 'link'
-                    }
-                ]
+                type: 'link',
+                path: '/kpkp',
             },
             {
-                title: 'Laporan Pemasangan',
+                title: 'Bank',
                 isPinned: false,
-                icon: 'report',
-                path: '/pemasangan/laporan',
-                type: 'link'
+                icon: 'home',
+                type: 'link',
+                path: '/bank',
             },
-        ]
+            {
+                title: 'BP Tapera',
+                isPinned: false,
+                icon: 'money-bill-wave',
+                type: 'link',
+                path: '/monev/tapera',
+            },
+            {
+                title: 'Re-Distribusi',
+                isPinned: false,
+                icon: 'redo',
+                type: 'link',
+                path: '/monev/redistribusi',
+            },
+            {
+                title: 'Pelaporan',
+                isPinned: false,
+                icon: 'clipboard-list',
+                type: 'link',
+                path: '/monev/pelaporan',
+            },
+            {
+                title: 'Pengaturan',
+                isPinned: false,
+                icon: 'cogs',
+                type: 'link',
+                path: '/monev/pengaturan',
+            },
+        ],
     },
-]
+];

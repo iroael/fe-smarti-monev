@@ -570,6 +570,7 @@ interface _GlobalComponents {
     'ThemeKnowledgebaseFeaturesFaq': typeof import("../components/theme/knowledgebase/FeaturesFaq.vue")['default']
     'ThemeKnowledgebaseSearch': typeof import("../components/theme/knowledgebase/KnowledgebaseSearch.vue")['default']
     'ThemeKnowledgebaseLatestArticles': typeof import("../components/theme/knowledgebase/LatestArticles.vue")['default']
+    'ThemeKpkpDatatableZeroConfiguration': typeof import("../components/theme/kpkp/datatable/zeroConfiguration.vue")['default']
     'ThemeLearningCourseBlogBox': typeof import("../components/theme/learning/course/BlogBox.vue")['default']
     'ThemeLearningCourseDetail': typeof import("../components/theme/learning/course/CourseDetail.vue")['default']
     'ThemeLearningFiltersCategoriesView': typeof import("../components/theme/learning/filters/CategoriesView.vue")['default']
@@ -1376,6 +1377,7 @@ interface _GlobalComponents {
     'LazyThemeKnowledgebaseFeaturesFaq': LazyComponent<typeof import("../components/theme/knowledgebase/FeaturesFaq.vue")['default']>
     'LazyThemeKnowledgebaseSearch': LazyComponent<typeof import("../components/theme/knowledgebase/KnowledgebaseSearch.vue")['default']>
     'LazyThemeKnowledgebaseLatestArticles': LazyComponent<typeof import("../components/theme/knowledgebase/LatestArticles.vue")['default']>
+    'LazyThemeKpkpDatatableZeroConfiguration': LazyComponent<typeof import("../components/theme/kpkp/datatable/zeroConfiguration.vue")['default']>
     'LazyThemeLearningCourseBlogBox': LazyComponent<typeof import("../components/theme/learning/course/BlogBox.vue")['default']>
     'LazyThemeLearningCourseDetail': LazyComponent<typeof import("../components/theme/learning/course/CourseDetail.vue")['default']>
     'LazyThemeLearningFiltersCategoriesView': LazyComponent<typeof import("../components/theme/learning/filters/CategoriesView.vue")['default']>
@@ -2188,6 +2190,7 @@ export const ThemeKnowledgebaseFaqWidgets: typeof import("../components/theme/kn
 export const ThemeKnowledgebaseFeaturesFaq: typeof import("../components/theme/knowledgebase/FeaturesFaq.vue")['default']
 export const ThemeKnowledgebaseSearch: typeof import("../components/theme/knowledgebase/KnowledgebaseSearch.vue")['default']
 export const ThemeKnowledgebaseLatestArticles: typeof import("../components/theme/knowledgebase/LatestArticles.vue")['default']
+export const ThemeKpkpDatatableZeroConfiguration: typeof import("../components/theme/kpkp/datatable/zeroConfiguration.vue")['default']
 export const ThemeLearningCourseBlogBox: typeof import("../components/theme/learning/course/BlogBox.vue")['default']
 export const ThemeLearningCourseDetail: typeof import("../components/theme/learning/course/CourseDetail.vue")['default']
 export const ThemeLearningFiltersCategoriesView: typeof import("../components/theme/learning/filters/CategoriesView.vue")['default']
@@ -2994,6 +2997,7 @@ export const LazyThemeKnowledgebaseFaqWidgets: LazyComponent<typeof import("../c
 export const LazyThemeKnowledgebaseFeaturesFaq: LazyComponent<typeof import("../components/theme/knowledgebase/FeaturesFaq.vue")['default']>
 export const LazyThemeKnowledgebaseSearch: LazyComponent<typeof import("../components/theme/knowledgebase/KnowledgebaseSearch.vue")['default']>
 export const LazyThemeKnowledgebaseLatestArticles: LazyComponent<typeof import("../components/theme/knowledgebase/LatestArticles.vue")['default']>
+export const LazyThemeKpkpDatatableZeroConfiguration: LazyComponent<typeof import("../components/theme/kpkp/datatable/zeroConfiguration.vue")['default']>
 export const LazyThemeLearningCourseBlogBox: LazyComponent<typeof import("../components/theme/learning/course/BlogBox.vue")['default']>
 export const LazyThemeLearningCourseDetail: LazyComponent<typeof import("../components/theme/learning/course/CourseDetail.vue")['default']>
 export const LazyThemeLearningFiltersCategoriesView: LazyComponent<typeof import("../components/theme/learning/filters/CategoriesView.vue")['default']>

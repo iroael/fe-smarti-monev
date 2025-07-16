@@ -30,6 +30,7 @@ export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callba
 export { setInterval } from '#app/compat/interval';
 export { src, filtered, filter, lastModified, loadFile, collapseFilter, collapse } from '../composables/contact';
 export { errors, optionValues, inputs, formSubmitted, onCustomStyleSubmit } from '../composables/taskvalidation';
+export { useTableData, Dose, Unit, HousingGroup } from '../composables/useTableData';
 export { useAppStore } from '../stores/app';
 export { useChatStore } from '../stores/chat';
 export { useCommonStore } from '../stores/common';

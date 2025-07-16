@@ -182,6 +182,7 @@ declare global {
   const useSidebarStore: typeof import('../../stores/sidebar')['useSidebarStore']
   const useSlots: typeof import('vue')['useSlots']
   const useState: typeof import('../../node_modules/nuxt/dist/app/composables/state')['useState']
+  const useTableData: typeof import('../../composables/useTableData')['useTableData']
   const useTaskStore: typeof import('../../stores/task')['useTaskStore']
   const useTemplateRef: typeof import('vue')['useTemplateRef']
   const useTodoStore: typeof import('../../stores/todo')['useTodoStore']
@@ -203,6 +204,9 @@ declare global {
   // @ts-ignore
   export type { Component, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
   import('vue')
+  // @ts-ignore
+  export type { Dose, Unit, HousingGroup } from '../../composables/useTableData'
+  import('../../composables/useTableData')
 }
 // for vue template auto import
 import { UnwrapRef } from 'vue'
@@ -389,6 +393,7 @@ declare module 'vue' {
     readonly useSidebarStore: UnwrapRef<typeof import('../../stores/sidebar')['useSidebarStore']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useState: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/state')['useState']>
+    readonly useTableData: UnwrapRef<typeof import('../../composables/useTableData')['useTableData']>
     readonly useTaskStore: UnwrapRef<typeof import('../../stores/task')['useTaskStore']>
     readonly useTemplateRef: UnwrapRef<typeof import('vue')['useTemplateRef']>
     readonly useTodoStore: UnwrapRef<typeof import('../../stores/todo')['useTodoStore']>
